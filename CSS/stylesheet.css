@@ -46,14 +46,14 @@ table {
 
 /* End of CSS Reset */
 
-
+/* header */
 header {
 	background-color: #404040;
   width: 100%;
   height: 3em;
 }
 
-#headHover:hover {
+header li:hover {
 	background-color: #202020;
 }
 
@@ -61,7 +61,6 @@ header ul {
 	font-family: calibri;
 	font-weight: 600;
 	font-size: 1em;
-	list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -87,4 +86,110 @@ header p {
 	font-weight: 600;
 	font-size: 1em;
 	font-family: calibri;
+}
+/* end header */
+
+/*center jumbtron*/
+section {
+	height: 40em;
+	background-image: url("https://static.pexels.com/photos/68724/pexels-photo-68724.jpeg");
+	background-size: cover;
+	width: 100%;
+	text-align: center;
+	overflow: auto;
+}
+
+section p {
+	margin-top: 1.75em;
+	margin-bottom: 40px;
+	font-size: 110px;
+  color: white;
+  font-family: calibri;
+  font-weight: 100;
+  text-transform: uppercase;
+  opacity: .5;
+}
+
+.btn-main {
+  font-weight: 100;
+  font-family: calibri;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #404040;
+  border-radius: 10px;
+  padding: 15px 35px;
+}
+
+.btn-main:hover {
+  background-color: #363535;
+  font-size: 18px;
+}
+/*end of center jumbotron*/
+
+/*project section */
+.projects {
+    width: 33%;
+    height: 450px;
+    background-color: white;
+    float: left;
+    text-align: center;
+}
+
+.title {
+	margin-top: 30px;
+  color: #404040;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-family: serif;
+	font-weight: 800;
+}
+
+.projects p {
+	margin-top: 1em;
+	font-weight: 500;
+	font-size: 1em;
+	font-family: calibri;
+	margin-bottom: 1em;
+}
+
+.projects img {
+	margin-top: .75em;
+	width: 25em;
+}
+
+.btn-proj {
+    font-family: calibri;
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border: .5px solid black;
+    padding: 10px 20px;
+    margin-top: 0;
+    display: inline-block;
+}
+
+.btn-proj:hover {
+    background-color: black;
+    color: white;
+}
+
+/*end of project section*/
+
+footer {
+  position: relative;
+	background-color: #404040;
+  width: 100%;
+  height: 3em;
+	clear: both;
+}
+
+footer p {
+	color: white;
+	font-weight: 400;
+	font-size: 1em;
+	padding: 1em;
 }
