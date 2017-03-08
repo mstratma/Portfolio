@@ -92,7 +92,7 @@ header p {
 
 /*center jumbtron*/
 section {
-	height: 40em;
+	height: 35em;
 	background-image: url("https://static.pexels.com/photos/68724/pexels-photo-68724.jpeg");
 	background-size: cover;
 	width: 100%;
@@ -137,6 +137,7 @@ section p {
     background-color: white;
     float: left;
     text-align: center;
+		position: relative;
 }
 
 .title {
@@ -157,11 +158,6 @@ section p {
 	margin-bottom: 1em;
 }
 
-.projects img {
-	margin-top: .75em;
-	width: 25em;
-}
-
 .btn-proj {
     font-family: calibri;
     color: black;
@@ -180,6 +176,41 @@ section p {
 		transition: background-color .4s;
 		opacity: .7;
     color: white;
+}
+
+.image {
+  display: block;
+  width: 25em;
+  height: 16em;
+	margin: 0 auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 58px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 16em;
+  width: 25em;
+	margin: 0 auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: grey;
+}
+
+.projects:hover .overlay {
+	opacity: .9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 /*end of project section*/
