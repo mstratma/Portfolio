@@ -14,7 +14,7 @@ header {
 	margin-top: 30px;
 	margin-bottom: 10px;
 	font-size: 24px;
-	font-weight: bold;
+	font-family: Verdana;
 }
 
 .resume-section .content {
@@ -45,7 +45,7 @@ header {
 	width: 100%;
 	margin-top: -20px;
 	height: 60px;
-	background-color: #404040;
+	background-color: black;
 }
 
 #name {
@@ -76,7 +76,7 @@ a:hover {
 	margin-top: 1px;
 	width: 10%;
 	height: 1300px;
-	background-color: grey;
+	background-color: #DDFFDB;
 	margin-bottom: 10px;
 }
 
@@ -86,7 +86,7 @@ a:hover {
 	margin-top: 1px;
 	width: 10%;
 	height: 1300px;
-	background-color: grey;
+	background-color: #DDFFDB;
 	margin-bottom: 10px;
 	}
 
@@ -96,7 +96,7 @@ a:hover {
 	margin-top: 1px;
 	width: 80%;
 	height: 1300px;
-	background-color: #DCDCDC;
+	background-color: white;
 	margin-bottom: 10px;
 }
 

@@ -93,7 +93,7 @@ header p {
 /*center jumbtron*/
 section {
 	height: 35em;
-	background-image: url("https://static.pexels.com/photos/68724/pexels-photo-68724.jpeg");
+	background-image: url("https://static.pexels.com/photos/14613/Life-of-Pix-free-stock-photos-blocks-sky-monument-davideragusa.jpg");
 	background-size: cover;
 	width: 100%;
 	text-align: center;
@@ -101,14 +101,15 @@ section {
 }
 
 section p {
-	margin-top: 1.75em;
+	margin-top: 1.25em;
+	letter-spacing: 10px;
 	margin-bottom: 40px;
 	font-size: 110px;
-  color: white;
+  color: black;
   font-family: calibri;
   font-weight: 100;
   text-transform: uppercase;
-  opacity: .5;
+  opacity: .6;
 }
 
 .btn-main {
@@ -144,10 +145,10 @@ section p {
 	margin-top: 30px;
   color: #404040;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   font-size: 18px;
-  font-family: serif;
-	font-weight: 800;
+  font-family: calibri;
+	font-weight: 400;
 }
 
 .projects p {
@@ -187,7 +188,7 @@ section p {
 
 .overlay {
   position: absolute;
-  top: 58px;
+  top: 68px;
   bottom: 0;
   left: 0;
   right: 0;
