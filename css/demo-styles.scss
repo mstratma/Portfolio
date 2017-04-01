@@ -41,11 +41,15 @@ table {
 
 /* End of CSS Reset */
 
+/*css variables */
+$defaultFont: calibri;
+$themeColor: blue;
+$backImage: "https://static.pexels.com/photos/14613/Life-of-Pix-free-stock-photos-blocks-sky-monument-davideragusa.jpg";
 
 /* header */
 
 header {
-    background-color: #404040;
+    background-color: $themeColor;
     width: 100%;
     height: 3em;
 }
@@ -56,7 +60,7 @@ header li:hover {
 }
 
 header ul {
-    font-family: calibri;
+    font-family: $defaultFont;
     font-weight: 600;
     font-size: 1em;
     margin: 0;
@@ -83,7 +87,7 @@ header p {
     float: right;
     font-weight: 600;
     font-size: 1em;
-    font-family: calibri;
+    font-family: $defaultFont;
 }
 
 
@@ -94,7 +98,7 @@ header p {
 
 section {
     height: 35em;
-    background-image: url("https://static.pexels.com/photos/14613/Life-of-Pix-free-stock-photos-blocks-sky-monument-davideragusa.jpg");
+    background-image: url("#{$backImage}");
     background-size: cover;
     width: 100%;
     text-align: center;
@@ -107,7 +111,7 @@ section p {
     margin-bottom: 40px;
     font-size: 110px;
     color: black;
-    font-family: calibri;
+    font-family: $defaultFont;
     font-weight: 100;
     text-transform: uppercase;
     opacity: .6;
@@ -115,12 +119,12 @@ section p {
 
 .btn-main {
     font-weight: 100;
-    font-family: calibri;
+    font-family: $defaultFont;
     font-size: 16px;
     text-decoration: none;
     letter-spacing: 1px;
     color: white;
-    background-color: #404040;
+    background-color: $themeColor;
     border-radius: 10px;
     padding: 15px 35px;
 }
@@ -147,11 +151,11 @@ section p {
 
 .title {
     margin-top: 30px;
-    color: #404040;
+    color: $themeColor;
     text-transform: uppercase;
     margin-bottom: 20px;
     font-size: 18px;
-    font-family: calibri;
+    font-family: $defaultFont;
     font-weight: 400;
 }
 
@@ -159,12 +163,12 @@ section p {
     margin-top: 1em;
     font-weight: 500;
     font-size: 1em;
-    font-family: calibri;
+    font-family: $defaultFont;
     margin-bottom: 1em;
 }
 
 .btn-proj {
-    font-family: calibri;
+    font-family: $defaultFont;
     color: black;
     font-size: 14px;
     text-decoration: none;
@@ -223,15 +227,14 @@ section p {
 
 footer {
     position: relative;
-    background-color: #404040;
+    background-color: $themeColor;
     width: 100%;
     height: 3em;
     clear: both;
-}
-
-footer p {
-    color: white;
-    font-weight: 400;
-    font-size: 1em;
-    padding: 1em;
+    p {
+      color: white;
+      font-weight: 400;
+      font-size: 1em;
+      padding: 1em;
+    }
 }

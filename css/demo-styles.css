@@ -1,3 +1,194 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* End of CSS Reset */
+/*css variables */
+/* header */
+header {
+  background-color: blue;
+  width: 100%;
+  height: 3em; }
+
+header li:hover {
+  background-color: #202020;
+  transition: background-color .4s; }
+
+header ul {
+  font-family: calibri;
+  font-weight: 600;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+
+header li {
+  float: left; }
+
+header a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  text-decoration: none; }
+
+header p {
+  color: white;
+  margin-right: 10px;
+  padding: 1em;
+  float: right;
+  font-weight: 600;
+  font-size: 1em;
+  font-family: calibri; }
+
+/* end header */
+/*center jumbtron*/
+section {
+  height: 35em;
+  background-image: url("https://static.pexels.com/photos/14613/Life-of-Pix-free-stock-photos-blocks-sky-monument-davideragusa.jpg");
+  background-size: cover;
+  width: 100%;
+  text-align: center;
+  overflow: auto; }
+
+section p {
+  margin-top: 1.25em;
+  letter-spacing: 10px;
+  margin-bottom: 40px;
+  font-size: 110px;
+  color: black;
+  font-family: calibri;
+  font-weight: 100;
+  text-transform: uppercase;
+  opacity: .6; }
+
+.btn-main {
+  font-weight: 100;
+  font-family: calibri;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+  padding: 15px 35px; }
+
+.btn-main:hover {
+  background-color: #303030;
+  transition: background-color .1s; }
+
+/*end of center jumbotron*/
+/*project section */
+.projects {
+  width: 33%;
+  height: 450px;
+  background-color: white;
+  float: left;
+  text-align: center;
+  position: relative; }
+
+.title {
+  margin-top: 30px;
+  color: blue;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-family: calibri;
+  font-weight: 400; }
+
+.projects p {
+  margin-top: 1em;
+  font-weight: 500;
+  font-size: 1em;
+  font-family: calibri;
+  margin-bottom: 1em; }
+
+.btn-proj {
+  font-family: calibri;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: .5px solid black;
+  padding: 10px 20px;
+  margin-top: 0;
+  display: inline-block; }
+
+.btn-proj:hover {
+  background-color: black;
+  transition: background-color .4s;
+  opacity: .7;
+  color: white; }
+
+.image {
+  display: block;
+  width: 25em;
+  height: 16em;
+  margin: 0 auto; }
+
+.overlay {
+  position: absolute;
+  top: 68px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 16em;
+  width: 25em;
+  margin: 0 auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: grey; }
+
+.projects:hover .overlay {
+  opacity: .9; }
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+/*end of project section*/
+footer {
+  position: relative;
+  background-color: blue;
+  width: 100%;
+  height: 3em;
+  clear: both; }
+  footer p {
+    color: white;
+    font-weight: 400;
+    font-size: 1em;
+    padding: 1em; }
 
 /*# sourceMappingURL=demo-styles.css.map */
