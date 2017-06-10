@@ -30,42 +30,45 @@ table {
 
 /* End of CSS Reset */
 /*css variables */
+/*
+$defaultFont: calibri;
+$themeColor: #404040;
+$themeTextColor: white;
+$backImage: "https://static.pexels.com/photos/14613/Life-of-Pix-free-stock-photos-blocks-sky-monument-davideragusa.jpg";
+$backColor: white;
+*/
 /* header */
 header {
   background-color: #404040;
   width: 100%;
   height: 3em; }
+  header ul {
+    font-family: calibri;
+    font-weight: 600;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; }
+  header li {
+    float: left; }
+  header a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    text-decoration: none; }
+  header p {
+    color: white;
+    margin-right: 10px;
+    padding: 1em;
+    float: right;
+    font-weight: 600;
+    font-size: 1em;
+    font-family: calibri; }
 
 header li:hover {
   background-color: #202020;
   transition: background-color .4s; }
-
-header ul {
-  font-family: calibri;
-  font-weight: 600;
-  font-size: 1em;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; }
-
-header li {
-  float: left; }
-
-header a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  text-decoration: none; }
-
-header p {
-  color: white;
-  margin-right: 10px;
-  padding: 1em;
-  float: right;
-  font-weight: 600;
-  font-size: 1em;
-  font-family: calibri; }
 
 /* end header */
 /*center jumbtron*/
@@ -76,17 +79,16 @@ section {
   width: 100%;
   text-align: center;
   overflow: auto; }
-
-section p {
-  margin-top: 1.25em;
-  letter-spacing: 10px;
-  margin-bottom: 40px;
-  font-size: 110px;
-  color: black;
-  font-family: calibri;
-  font-weight: 100;
-  text-transform: uppercase;
-  opacity: .6; }
+  section p {
+    margin-top: 1.25em;
+    letter-spacing: 10px;
+    margin-bottom: 40px;
+    font-size: 110px;
+    color: black;
+    font-family: calibri;
+    font-weight: 100;
+    text-transform: uppercase;
+    opacity: .6; }
 
 .btn-main {
   font-weight: 100;
@@ -105,6 +107,33 @@ section p {
 
 /*end of center jumbotron*/
 /*project section */
+#projOverlay1 {
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  height: 90%;
+  border-radius: 5px;
+  border: 5px solid rgba(200, 200, 200, 0.3);
+  position: absolute;
+  z-index: 1;
+  background-image: url("c:/Users/Matt/portfolio/Images/ConvCalcSS.jpg");
+  background-size: cover;
+  color: green;
+  display: none; }
+
+#orangeBox {
+  float: right;
+  background: black;
+  color: #fff;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  width: 30px;
+  height: 25px;
+  border-radius: 5px; }
+
 .projects {
   width: 33%;
   height: 450px;
@@ -112,6 +141,12 @@ section p {
   float: left;
   text-align: center;
   position: relative; }
+  .projects p {
+    margin-top: 1em;
+    font-weight: 500;
+    font-size: 1em;
+    font-family: calibri;
+    margin-bottom: 1em; }
 
 .title {
   margin-top: 30px;
@@ -121,13 +156,6 @@ section p {
   font-size: 18px;
   font-family: calibri;
   font-weight: 400; }
-
-.projects p {
-  margin-top: 1em;
-  font-weight: 500;
-  font-size: 1em;
-  font-family: calibri;
-  margin-bottom: 1em; }
 
 .btn-proj {
   font-family: calibri;
@@ -176,7 +204,8 @@ section p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); }
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer; }
 
 /*end of project section*/
 footer {

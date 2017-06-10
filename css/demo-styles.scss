@@ -42,11 +42,20 @@ table {
 /* End of CSS Reset */
 
 /*css variables */
+
 $defaultFont: calibri;
 $themeColor: #404040;
 $themeTextColor: white;
 $backImage: "https://static.pexels.com/photos/14613/Life-of-Pix-free-stock-photos-blocks-sky-monument-davideragusa.jpg";
 $backColor: white;
+
+/*
+$defaultFont: calibri;
+$themeColor: #404040;
+$themeTextColor: white;
+$backImage: "https://static.pexels.com/photos/14613/Life-of-Pix-free-stock-photos-blocks-sky-monument-davideragusa.jpg";
+$backColor: white;
+*/
 
 /* header */
 
@@ -81,6 +90,11 @@ header {
       font-size: 1em;
       font-family: $defaultFont;
     }
+}
+
+header li:hover {
+    background-color: #202020;
+    transition: background-color .4s;
 }
 /* end header */
 
@@ -129,6 +143,36 @@ section {
 
 
 /*project section */
+
+#projOverlay1 {
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  height: 90%;
+  border-radius: 5px;
+  border: 5px solid rgba(200,200,200,0.3);
+  position: absolute;
+  z-index: 1;
+  //background-color: rgba(100,100,100,0.8);
+  background-image: url('c:/Users/Matt/portfolio/Images/ConvCalcSS.jpg');
+  background-size: cover;
+  color: green;
+  display: none;
+}
+
+#orangeBox {
+  float: right;
+  background: black;
+  color: #fff;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  width: 30px;
+  height: 25px;
+  border-radius: 5px;
+}
 
 .projects {
     width: 33%;
@@ -209,6 +253,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 
