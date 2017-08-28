@@ -149,7 +149,7 @@ section {
 /*project section */
 
 #projOverlay1 {
-  border: 5px solid black;
+  border: 5px solid rgba(100,100,100,.5);
   z-index: 1;
   width: 90%;
   left: 5%;
@@ -167,7 +167,7 @@ section {
 #orangeBox {
   cursor: pointer;
   float: right;
-  background: black;
+  background-color: #323232;
   color: #fff;
   font-family: 'Helvetica', 'Arial', sans-serif;
   font-size: 1.5em;
@@ -186,11 +186,13 @@ section {
     text-align: center;
     position: relative;
     p {
-      margin-top: 1em;
       font-weight: 500;
       font-size: 1em;
       font-family: $defaultFont;
-      margin-bottom: 1em;
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 1em;
+      padding-bottom: 1em;
     }
 }
 
@@ -201,7 +203,7 @@ section {
     margin-bottom: 20px;
     font-size: 18px;
     font-family: $defaultFont;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .btn-proj {
