@@ -7,6 +7,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   font: inherit;
   vertical-align: baseline; }
 
+label {
+  cursor: inherit; }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -108,21 +111,21 @@ section {
 /*end of center jumbotron*/
 /*project section */
 #projOverlay1 {
+  border: 5px solid black;
+  z-index: 1;
   width: 90%;
   left: 5%;
   right: 5%;
   top: 5%;
   height: 90%;
   border-radius: 5px;
-  border: 5px solid rgba(200, 200, 200, 0.3);
-  position: absolute;
-  z-index: 1;
+  position: fixed;
   background-image: url("c:/Users/Matt/portfolio/Images/ConvCalcSS.jpg");
   background-size: cover;
-  color: green;
   display: none; }
 
 #orangeBox {
+  cursor: pointer;
   float: right;
   background: black;
   color: #fff;

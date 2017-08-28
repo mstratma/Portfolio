@@ -8,13 +8,14 @@ document.getElementById('preview1').onclick = function showPreview1() {
 }
 }
 
-document.getElementById('greyBox').onclick = function hidePreview1() {
+document.getElementById('orangeBox').onclick = function hidePreview1() {
   if (x.style.display === 'block') {
       x.style.display = 'none';
   } else {
       x.style.display = 'block';
   }
 }
+
 /*
 function showPreview1() {
   var openpop1 = document.getElementById('projOverlay1');
@@ -24,9 +25,9 @@ function showPreview1() {
       openpop1.style.display = 'none';
 }
 }
-*/
 
-/*function hidePreview1() {
+
+function hidePreview1() {
   if (popup1.style.dislay === 'block') {
   popup1.style.display = 'none');
 } else {
