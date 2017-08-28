@@ -9,6 +9,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
 }
 
+label {
+  cursor: inherit;
+}
+
 
 /* HTML5 display-role reset for older browsers */
 
@@ -42,11 +46,20 @@ table {
 /* End of CSS Reset */
 
 /*css variables */
+
 $defaultFont: calibri;
 $themeColor: #404040;
 $themeTextColor: white;
 $backImage: "https://static.pexels.com/photos/14613/Life-of-Pix-free-stock-photos-blocks-sky-monument-davideragusa.jpg";
 $backColor: white;
+
+/*
+$defaultFont: calibri;
+$themeColor: #404040;
+$themeTextColor: white;
+$backImage: "https://static.pexels.com/photos/14613/Life-of-Pix-free-stock-photos-blocks-sky-monument-davideragusa.jpg";
+$backColor: white;
+*/
 
 /* header */
 
@@ -81,6 +94,11 @@ header {
       font-size: 1em;
       font-family: $defaultFont;
     }
+}
+
+header li:hover {
+    background-color: #202020;
+    transition: background-color .4s;
 }
 /* end header */
 
@@ -130,6 +148,36 @@ section {
 
 /*project section */
 
+#projOverlay1 {
+  border: 5px solid rgba(100,100,100,.5);
+  z-index: 1;
+  width: 90%;
+  left: 5%;
+  right: 5%;
+  top: 5%;
+  height: 90%;
+  border-radius: 5px;
+  position: fixed;
+  //background-color: rgba(100,100,100,0.8)
+  background-image: url('c:/Users/Matt/portfolio/Images/ConvCalcSS.jpg');
+  background-size: cover;
+  display: none;
+}
+
+#orangeBox {
+  cursor: pointer;
+  float: right;
+  background-color: #323232;
+  color: #fff;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  width: 30px;
+  height: 25px;
+  border-radius: 5px;
+}
+
 .projects {
     width: 33%;
     height: 450px;
@@ -138,11 +186,13 @@ section {
     text-align: center;
     position: relative;
     p {
-      margin-top: 1em;
       font-weight: 500;
       font-size: 1em;
       font-family: $defaultFont;
-      margin-bottom: 1em;
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 1em;
+      padding-bottom: 1em;
     }
 }
 
@@ -153,7 +203,7 @@ section {
     margin-bottom: 20px;
     font-size: 18px;
     font-family: $defaultFont;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .btn-proj {
@@ -209,6 +259,7 @@ section {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
 }
 
 
